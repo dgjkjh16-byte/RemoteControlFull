@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="neon_green">#00ff00</color>
+    <color name="dark_bg">#0a0a0a</color>
+    <color name="terminal_black">#1a1a1a</color>
+</resources>
