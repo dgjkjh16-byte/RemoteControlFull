@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0a"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REMOTE CONTROL SYSTEM v02.28"
+        android:textColor="#00ff00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00ff00"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STANDBY"
+        android:textColor="#00ff00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sys_info"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="[+] System Ready"
+        android:textColor="#00ff00"
+        android:textSize="11sp"
+        android:background="#1a1a1a"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"
+        android:typeface="monospace" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_gps_tracking"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="GPS TRACKING"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="CAMERA"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_mic"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="MICROPHONE"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_files"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="FILE SYSTEM"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_network"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="NETWORK MON"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_monitor"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="SYS MONITOR"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_sync"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="SYNC DEVICE"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+            <Button
+                android:id="@+id/btn_notify"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:text="NOTIF LOG"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:layout_margin="6dp" />
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>
