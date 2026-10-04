@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0a"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: IDLE"
+        android:textColor="#00ff00"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="#1a1a1a" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/gpsBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="GPS TRACK"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/micBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="MICROPHONE"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/fileBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="FILE SYSTEM"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/netBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="NETWORK"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/sysBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="SYSTEM INFO"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/camBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="CAMERA"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/syncBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="DEVICE SYNC"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+        <Button
+            android:id="@+id/notifBtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="NOTIF LOG"
+            android:textColor="#0a0a0a"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:background="#00ff00" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/gpsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS: Waiting..."
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/micText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mic: Idle"
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/fileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Files: Ready"
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/netText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network: Connected"
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/sysText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System: Online"
+            android:textColor="#00ff00"
+            android:textSize="12sp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
